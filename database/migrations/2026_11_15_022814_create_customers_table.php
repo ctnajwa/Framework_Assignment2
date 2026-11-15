@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->text('address');
-            $table->string('phoneNumber');
-            $table->enum('gender', ['Male', 'Female']);
-            $table->date('birthday');
-            $table->timestamps();
+            $table->string('name');                           // name 
+            $table->string('email')->unique();               // email
+            $table->text('address');                        // address
+            $table->string('phoneNumber');                 // phone number
+            $table->enum('gender', ['Male', 'Female']);   // gender
+            $table->date('birthday');                    // birthday
+            $table->timestamps();                        // created_at and updated_at
         });
     }
 

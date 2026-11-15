@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model
 {
+    // Connect the model to the customers table
     protected $table = 'customers';
 
     protected $fillable = [
